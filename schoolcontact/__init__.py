@@ -1,9 +1,6 @@
 # coding: UTF-8
 
 # 设置python运行环境的编码
-import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
 
 from flask import Flask
 
@@ -22,5 +19,3 @@ def close_data_base(exception=None):
     if exception is not None:
         print('+++++++' + str(exception) + '+++++++')
     db.remove()
-
-import urls
